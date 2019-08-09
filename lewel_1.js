@@ -19,7 +19,7 @@ class lewel_1 extends Phaser.Scene{
         this.load.spritesheet('run', 'assets/hero_anim_run.png',{frameWidth:40,frameHeight:60}
         );
         
-        this.load.audio('gold', 'assets/sound_19349.mp3');
+        this.load.audio('gold', 'assets/gold.mp3');
         this.load.audio('goSound', 'assets/go.mp3');
         this.load.audio('ladderSound', 'assets/on ladder.mp3');
         this.load.audio('sBounce', 'assets/bounce.mp3' );
