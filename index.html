@@ -13,6 +13,11 @@
         type: Phaser.AUTO,
         width: 1000,
         height: 600,
+        fps: {
+              target: 2,
+              min: 2,
+              forceSetTimeOut: true
+              },
         physics: {
             default: 'arcade',
             arcade: {
