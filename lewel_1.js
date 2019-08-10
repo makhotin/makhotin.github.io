@@ -149,7 +149,7 @@ update(){
     if (cursors.left.isDown)
     {
 
-        player.setVelocityX(-100);
+        player.setVelocityX(-180);
         
         if(!player.anims.isPlaing){player.anims.play('left', true)};
         if(!go.isPlaying && player.body.touching.down){
@@ -160,7 +160,7 @@ update(){
     }
     else if (cursors.right.isDown )
     {
-        player.setVelocityX(100);
+        player.setVelocityX(180);
         if(!player.anims.isPlaing){player.anims.play('right', true)};
         if(!go.isPlaying && player.body.touching.down){
             go.play();
@@ -187,7 +187,7 @@ update(){
         
         
         if(cursors.up.isDown ){
-            player.setVelocityY(-100);
+            player.setVelocityY(-150);
             player.setVelocityX(0);
             if(!player.anims.isPlaing){player.anims.play('onLadder', true)};
             if(!goOnLadder.isPlaying){ goOnLadder.play()};
@@ -195,14 +195,14 @@ update(){
             
         }
         else if(cursors.down.isDown){
-            player.setVelocityY(100);
+            player.setVelocityY(150);
             player.setVelocityX(0);
             if(!player.anims.isPlaing){player.anims.play('onLadder', true)};
             if(!goOnLadder.isPlaying){ goOnLadder.play()};
             
         }
         else if(cursors.right.isDown ){
-            player.setVelocityX(80);
+            player.setVelocityX(120);
             player.setVelocityY(0);
             if(!player.anims.isPlaing){player.anims.play('right', true)};
             if(!goOnLadder.isPlaying){ goOnLadder.play()};
@@ -211,7 +211,7 @@ update(){
         
             
         }else if(cursors.left.isDown){
-            player.setVelocityX(-80);
+            player.setVelocityX(-120);
             player.setVelocityY(0);
             if(!player.anims.isPlaing){player.anims.play('left', true)};
             if(!goOnLadder.isPlaying){ goOnLadder.play()};
