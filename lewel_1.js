@@ -1,6 +1,6 @@
 class lewel_1 extends Phaser.Scene{
     constructor(){
-        super(config);
+        super('lewel_1');
     }
     
 
@@ -150,6 +150,7 @@ update(){
     {
 
         player.setVelocityX(-100);
+        
         if(!player.anims.isPlaing){player.anims.play('left', true)};
         if(!go.isPlaying && player.body.touching.down){
             go.play();

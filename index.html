@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.18.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="dist/phaser-arcade-physics.min.js"></script>
     <script src="lewel_1.js"></script>
+    <script src="intro_1.js"></script>
+    <script src="mainMenu_1.js"></script>
 </head>
 <body>
 
@@ -10,18 +12,20 @@
 
     
     var config = {
-        type: Phaser.CANVAS,
+        type: Phaser.AUTO,
         width: 1000,
         height: 600,
-        fps: 15,
         physics: {
             default: 'arcade',
             arcade: {
                 gravity: { y: 500 },
-                debug:false
+                debug:true
             }
         },
-        scene:[lewel_1]
+        scene:[ intro_1,
+                mainMenu_1,
+                lewel_1],
+        fps:20
 
     };
 
@@ -40,7 +44,7 @@
     var platforms;
     var player;
     var cursors;   
-    game.scene.add('lewel_1');
+    //game.scene.start('mainMenu_1');
 
     </script>
 
